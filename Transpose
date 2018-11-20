@@ -1,0 +1,21 @@
+r=int(input("Enter the number of rows"))
+c=int(input("Enter the number of columns"))
+mat=[ ]
+for i in range(r):
+    mat.append([ ])
+    for j in range(c):
+        x=int(input("Enter the element"))
+        mat[i].append(x)
+print('Before Transpose',mat)
+
+
+
+
+
+a = [[1,2,3],[4,5,6],[7,8,9]]
+result = [[0,0,0],[0,0,0],[0,0,0]]
+for i in range(len(a)):
+    for j in range(len(a[0])):
+        result[j][i] = a[i][j]
+for r in result:
+    print('After Transpose: \t',r)
